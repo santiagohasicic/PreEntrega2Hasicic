@@ -16,6 +16,7 @@
 
 /*Navegacion*/
 header{
+    position: relative;
     width: 100%;
     padding: 10px 6px;
     display: flex;
@@ -27,6 +28,7 @@ header{
     z-index: 1;
     overflow: auto;
 }
+
 
 .nav-logo{
     display: flex;
@@ -95,15 +97,13 @@ header{
 
 /*Fondo index*/
 .img-fondo img{
-    position: relative;
-    width: 100%;
     height: 100%;
-    opacity: 80%;
-    z-index: 0;
-    overflow: auto;
+    width: 100%;
+    opacity: 85%;
 }
 
 footer{
+    position: relative;
     width: 100%;
     height: 75px;
     background-color:white ;
@@ -255,7 +255,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px){
     .bio{
         top: 220px;
     }
@@ -276,41 +276,28 @@ footer{
     }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-height: 768px){
     .bio{
-        top: 290px;
-        left: 0;
-        padding: 15px;
-        height: 110px;
-        width: 100%
-
+        top: 120px;
     }
     .bio2{
-        top: 420px;
-        left: 0;
-        padding: 15px;
-        height: 175px;
-        width: 100%
+        width: 380px;
+        top: 120px;
+        padding: 17px;
     }
     .bio3{
-        top: 610px;
-        left: 0;
-        padding: 15px;
-        height: 105px;
-        width: 100%
+        top: 600px;
+        width: 400px;
     }
     .bio-text{
-        font-size: 8px;
-    }
-    .bio-title{
         font-size: 14px;
     }
-    .img-fondo2 img{
-        height: 200%;
+    .bio-title{
+        font-size: 18px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .bio{
         top: 280px;
         left: 0;
@@ -398,4 +385,71 @@ footer{
     .bio-title{
         font-size: 6px;
     }
+}
+
+/*Musica*/
+.music-bg{
+    background-image: url(../img/musicafondo.jpg);
+    background-position: center;
+}
+
+.music-title{
+    position: relative;
+    width: 100%;
+    font-family: Inconsolata;
+    font-style: bold;
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(251, 251, 253);
+}
+
+.album-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.album-item{
+    height: auto;
+    width: 500px;
+    background-color: rgba(12, 13, 24, 0.365);
+    border: 3px white solid ;
+    padding: 25px;
+    margin: 25px;
+}
+
+.album-img{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.album-img img{
+    width: 100%;
+    height: auto;
+    border: 3px solid black;
+    opacity: 90%;
+}
+
+.album-title{
+    font-family: Inconsolata;
+    text-align: center;
+    color: white;
+}
+
+.track-list{
+    padding: ;
+    color: white;
+    font-family: Inconsolata;
+    font-size: 20px;
+}
+
+
+.album-img img:hover{
+    width: 100%;
+    height: auto;
+    border: 3px solid white;
+    opacity: 50%;
 }
