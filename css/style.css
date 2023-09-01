@@ -414,7 +414,7 @@ footer{
 .album-item{
     height: auto;
     width: 500px;
-    background-color: rgba(12, 13, 24, 0.365);
+    background-color: rgba(12, 13, 24, 0.534);
     border: 3px white solid ;
     padding: 25px;
     margin: 25px;
@@ -429,7 +429,7 @@ footer{
 .album-img img{
     width: 100%;
     height: auto;
-    border: 3px solid black;
+    border: 3px solid white;
     opacity: 90%;
 }
 
@@ -440,7 +440,6 @@ footer{
 }
 
 .track-list{
-    padding: ;
     color: white;
     font-family: Inconsolata;
     font-size: 20px;
@@ -450,6 +449,5 @@ footer{
 .album-img img:hover{
     width: 100%;
     height: auto;
-    border: 3px solid white;
-    opacity: 50%;
+    opacity: 75%;
 }
