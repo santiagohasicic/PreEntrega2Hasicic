@@ -499,3 +499,40 @@ footer{
         width: 100%;
     }
 }
+
+/* Tienda */
+
+.product-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.product-item{
+    margin: 10px;
+}
+.product-item img{
+    height: 450px;
+}
+
+.product-name{
+    font-family: Inconsolata;
+    text-align: center;
+    font-size: 20px;
+    font-style: bold;
+    color: black;
+}
+
+.product-price{
+    font-family: Inconsolata;
+    text-align: center;
+    font-size: 16px;
+    color: gray;
+}
+
+.product-item:hover{
+    .product-name{
+        color: blue;
+    }
+}
