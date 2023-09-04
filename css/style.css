@@ -445,9 +445,57 @@ footer{
     font-size: 20px;
 }
 
-
 .album-img img:hover{
     width: 100%;
     height: auto;
     opacity: 75%;
+}
+
+/*Galeria*/
+
+.gal-title{
+    text-align: center;
+    width: 100%;
+    font-family: Inconsolata;
+    font-style: bold;
+    padding-top: 20px;
+    color: black;
+}
+
+.img-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 20px 0 20px;
+}
+
+.img-container .img-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img-container .img-box .img-columna{
+    display: flex;
+    flex-direction: column;
+    width: 32.8%;
+}
+
+.img-columna img{
+    width: 100%;
+    padding-bottom: 15px ;
+    border-radius: 5px;
+}
+
+.img-columna img:hover{
+    opacity: 90%;
+}
+
+@media screen and (max-width: 769px){
+    .img-container .img-box{
+        flex-direction: column;
+    }
+    .img-container .img-box .img-columna{
+        width: 100%;
+    }
 }
